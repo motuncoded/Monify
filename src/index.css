@@ -1,0 +1,75 @@
+:root {
+  --white: #fbfbfb;
+  --gray-white: #eeeeee;
+  --dusty-gray: #878787;
+  --gluon-gray: #1b1b1b;
+  --black: #151419;
+  --primary-color: #f56e0f;
+  --secondary-color: #f8a700;
+  --primary-heading: 1.875rem;
+  --secondary-heading: 0.9375rem;
+  --fs-300: 0.8125rem;
+  --fs-400: 0.9375rem;
+  --fs-500: 1.875rem;
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--white);
+  color: var(--black);
+  font-family: system-ui, sans-serif;
+}
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  color: #eee;
+}
+li,
+a {
+  text-decoration: none;
+  list-style-type: none;
+  color: var(--color);
+}
+a:link,
+a:visited {
+  color: var(--color);
+}
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.primary-heading {
+  font-size: var(--primary-heading);
+  padding: 0.5rem;
+  color: var(--black);
+}
+.secondary-heading {
+  font-size: var(--secondary-heading);
+  padding: 0.5rem;
+  color: gray;
+}
+.fs-300 {
+  font-size: var(--fs-300);
+}
+.fs-400 {
+  font-size: var(--fs-400);
+}
+.fs-500 {
+  font-size: var(--fs-500);
+}
+.fs-600 {
+  font-size: var(--fs-300);
+}
