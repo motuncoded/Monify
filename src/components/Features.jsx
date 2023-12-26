@@ -15,7 +15,7 @@ const Features = () => {
         <h4>Everything required to effortlessly manage your finances.</h4>
         <h5>
           Open a full featured account in with virtual cards in less than 5
-          minutes.{" "}
+          minutes.
         </h5>
       </div>
       <div className="featured">

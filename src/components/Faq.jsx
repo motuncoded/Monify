@@ -20,6 +20,56 @@ const Faq = () => {
             </p>
           </details>
         </div>
+        <div className="accordion">
+          <details>
+            <summary>Can I change my plan later ? </summary>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              ducimus laboriosam ullam accusamus adipisci voluptatum assumenda
+              harum quidem doloribus placeat.
+            </p>
+          </details>
+        </div>{" "}
+        <div className="accordion">
+          <details>
+            <summary>What is you cancellation policy ? </summary>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              ducimus laboriosam ullam accusamus adipisci voluptatum assumenda
+              harum quidem doloribus placeat.
+            </p>
+          </details>
+        </div>
+        <div className="accordion">
+          <details>
+            <summary>Can other information be added to the invoice ? </summary>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              ducimus laboriosam ullam accusamus adipisci voluptatum assumenda
+              harum quidem doloribus placeat.
+            </p>
+          </details>
+        </div>{" "}
+        <div className="accordion">
+          <details>
+            <summary>How does billing work ? </summary>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              ducimus laboriosam ullam accusamus adipisci voluptatum assumenda
+              harum quidem doloribus placeat.
+            </p>
+          </details>
+        </div>{" "}
+        <div className="accordion">
+          <details>
+            <summary>How do I change my account email ? </summary>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+              ducimus laboriosam ullam accusamus adipisci voluptatum assumenda
+              harum quidem doloribus placeat.
+            </p>
+          </details>
+        </div>
       </div>
     </div>
   );

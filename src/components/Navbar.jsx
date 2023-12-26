@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../assets/logo.svg";
-import { IoIosArrowDown } from "react-icons/io";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+
 const Navbar = () => {
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
+
+  const toggle = (e) => {
+    e.preventDefault();
+    setIsNavExpanded(!isNavExpanded);
+  };
   return (
     <div className="navbar">
       <nav>
@@ -9,7 +16,12 @@ const Navbar = () => {
           <img src={logo} className="logo" alt="Monify logo" />
           <h1>Monify</h1>
         </header>
-        <ul className="primary-navigation">
+
+        <ul
+          className={
+            isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
+          }
+        >
           <li>
             <a href="#">Home</a>
           </li>
@@ -23,6 +35,10 @@ const Navbar = () => {
             <a href="#"> Login</a>
           </li>
         </ul>
+
+        <div className="hamburger-menu" onClick={toggle}>
+          <AiOutlineMenu className="menu" />
+        </div>
       </nav>
     </div>
   );
