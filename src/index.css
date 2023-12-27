@@ -13,6 +13,19 @@
   --fs-500: 1.875rem;
 }
 
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: var(--black);
+    color: var(--white);
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--white);
+    color: var(--black);
+  }
+}
 *,
 *:before,
 *:after {
@@ -21,8 +34,6 @@
   box-sizing: border-box;
 }
 body {
-  background-color: var(--white);
-  color: var(--black);
   font-family: system-ui, sans-serif;
 }
 img,

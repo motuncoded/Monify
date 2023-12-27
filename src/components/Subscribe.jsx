@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/logo.svg";
+import logo from "../assets/monify-logo.png";
 
 const Subscribe = () => {
   return (
@@ -7,8 +7,8 @@ const Subscribe = () => {
       <div className="subscribe">
         <div className="navigation">
           <div className="subscribe-logo">
-            <img src={logo} className="logo" alt="Monify logo" />
-            <h3 className="fs-500">Monify</h3>
+            <img src={logo} className="logo" alt="Monify-logo" />
+            <h3 className="">Monify</h3>
           </div>
 
           <ul>

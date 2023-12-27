@@ -27,7 +27,6 @@ nav {
 
 .logo {
   width: 45px;
-  height: 45px;
 }
 .logo-container > h1 {
   padding: 0 0.75rem;
@@ -45,8 +44,6 @@ nav {
 }
 .navigation-menu > li > a {
   padding: 0 1rem;
-}
-.navigation-menu > li > a:hover {
 }
 .navigation-menu li:nth-child(4) {
   font-size: 0.95rem;
@@ -107,8 +104,6 @@ nav {
 .cta-paragraph > h4 {
   padding: 0.25rem;
   font-weight: 500;
-}
-.icon-arrow {
 }
 
 .first > h5 {
@@ -196,10 +191,7 @@ nav {
   border-radius: 50%;
   padding: 0.25rem;
 }
-.featured-image {
-}
-.featured-image > img {
-}
+
 .get-started {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -288,21 +280,33 @@ details[open] > p {
 }
 .subscribe-logo {
   display: flex;
-  padding: 0 1rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+.subscribe-logo > .logo {
+  width: 45px;
 }
 .subscribe-logo > h3 {
+  font-size: 1.5rem;
   padding: 0 0.5rem;
 }
 
 .navigation > ul {
   display: flex;
+  justify-items: flex-start;
   flex-wrap: wrap;
+}
+.navigation > ul > li:nth-child(1) {
+  padding-left: 0;
 }
 .navigation > ul > li {
   padding: 0.5rem 1rem;
 }
 .stay-updated {
-  padding: 1rem;
+  padding: 1rem 0;
+}
+.stay-updated > h4 {
+  padding-bottom: 0.25rem;
 }
 .stay-updated > input {
   outline: none;
@@ -334,8 +338,7 @@ details[open] > p {
     justify-content: flex-start;
     grid-template-columns: 1fr;
   }
-  .navigation-menu {
-  }
+
   .hamburger-menu {
     display: block;
     cursor: pointer;
@@ -351,19 +354,22 @@ details[open] > p {
     display: flex;
     margin: 0;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
+  .navigation-menu.expanded li {
+    margin: 1rem 0;
+  }
   .navigation-menu li {
-    padding: 0.25rem;
     border-radius: 0.25vmax;
-    border: 2px solid var(--white);
+    border: 2px solid #fff;
   }
   .navigation-menu li:nth-child(4) {
     padding: 0.25rem;
     border-radius: 0.25vmax;
-    border: 2px solid var(--white);
+    border: 2px solid #fff;
   }
+
+  .navigation-menu li:nth-child(4):hover,
   .navigation-menu li:hover {
     background-color: var(--primary-color);
     border: 2px solid var(--primary-color);
@@ -375,17 +381,22 @@ details[open] > p {
     display: flex;
     flex-direction: column-reverse;
   }
-  .get-started {
+  .featured-image > img {
+  }
+
+  .second > img {
+  }
+  .feat .get-started {
     display: flex;
     flex-direction: column;
   }
   .subscribe {
     display: flex;
-
     flex-wrap: wrap;
   }
+
   .accordion {
-    width: 350px;
+    width: 375px;
     padding: 0.5rem;
   }
 }
@@ -402,6 +413,9 @@ details[open] > p {
   .hamburger-menu {
     display: block;
     position: relative;
+  }
+  .second > img {
+    width: min(300px, 500px);
   }
 
   .hero-container {
@@ -423,18 +437,36 @@ details[open] > p {
     display: flex;
     margin: 0;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
   .navigation-menu.expanded li {
     margin: 1rem 0;
   }
+  .navigation-menu li {
+    border-radius: 0.25vmax;
+    border: 2px solid #fff;
+  }
+  .navigation-menu li:nth-child(4) {
+    padding: 0.25rem;
+    border-radius: 0.25vmax;
+    border: 2px solid #fff;
+  }
+
+  .navigation-menu li:nth-child(4):hover,
+  .navigation-menu li:hover {
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    color: var(--white);
+    transition: all 0.3s ease-in;
+  }
+
   .featured {
     display: flex;
     flex-direction: column-reverse;
     justify-items: flex-start;
     place-items: flex-start;
   }
+
   .featured-image > img {
     max-width: 400px;
   }
@@ -442,8 +474,7 @@ details[open] > p {
   .first > p {
     max-width: 42ch;
   }
-  .second > img {
-  }
+
   .accordion {
     max-width: 700px;
     padding: 0.5rem;
