@@ -4,11 +4,7 @@
  
 
 ## **Preview**
-
-<div align='center'>
-<img src='/src/assets/monify-desktop.png' alt='Monify website'>
-</div>
-
+![](/assets/monify-desktop.png)
 
 <br>
 
