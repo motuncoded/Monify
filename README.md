@@ -5,6 +5,7 @@
 
 ## **Preview**
 ![](/assets/monify-desktop.png)
+![](./src/assets/monify-desktop.png)
 
 <br>
 
@@ -25,7 +26,6 @@
   | :-----: |
   |  <b>Overall score 90% for Both Mobile & Desktop</b> |
   | |
-  | <img src='./images/pagespeed-insights-score.svg' alt='Scoreboard'> |
   | |
   | Check out [**Pagespeed Insights**]([https://pagespeed.web.dev/analysis/https-0xabdulkhalid-github-io-interactive-rating-component/cugaaj3u85\?form_factor\=mobile](https://googlechrome.github.io/lighthouse/viewer/?psiurl=https%3A%2F%2Fmonify-alpha.vercel.app%2F&strategy=mobile&category=performance&category=accessibility&category=best-practices&category=seo&category=pwa&utm_source=lh-chrome-ext)) to get live score |
   ||
